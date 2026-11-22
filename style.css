@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #0b0d17; /* Темный космический фон */
+    color: #e0e0e0; /* Светлый текст */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #151a2e; /* Темно-синяя шапка */
+    box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+}
+
+.logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #4db8ff; /* Голубой акцент */
+}
+
+nav a { 
+    margin-left: 20px; 
+    text-decoration: none; 
+    color: #e0e0e0; 
+    font-weight: 500; 
+    transition: color 0.3s;
+}
+
+nav a:hover { color: #4db8ff; }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text { flex: 1; }
+.hero-text h1 { 
+    font-size: 48px; 
+    margin-bottom: 20px; 
+    color: #ffffff; 
+    line-height: 1.1;
+}
+.hero-text p { 
+    font-size: 18px; 
+    color: #a0aabf; 
+    margin-bottom: 30px; 
+    max-width: 500px;
+}
+
+.btn {
+    background-color: #4db8ff; 
+    color: #0b0d17; 
+    padding: 15px 30px;
+    text-decoration: none; 
+    border-radius: 8px; 
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #82ceff;
+}
+
+/* Блок для 3D-модели */
+.model-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #151a2e;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(77, 184, 255, 0.15);
+    border: 1px solid #2a3352;
+}
+
+.model-box p { 
+    margin-top: 10px; 
+    color: #6a7592; 
+    font-size: 14px; 
+}
+
+/* Карточки товаров */
+.catalog { 
+    padding: 60px 40px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.catalog h2 { 
+    text-align: center; 
+    font-size: 32px; 
+    margin-bottom: 40px; 
+    color: #ffffff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: #151a2e;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    border: 1px solid #2a3352;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #4db8ff;
+}
+
+.card img { 
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    background-color: #1a2238;
+}
+
+.card h3 { 
+    margin: 15px 0 5px; 
+    color: #ffffff;
+}
+
+.price { 
+    color: #4db8ff; 
+    font-weight: bold; 
+    font-size: 20px; 
+    margin-bottom: 15px;
+}
+.badge {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.banner {
+    background: linear-gradient(135deg, #0b0d17 0%, #1a2238 100%);
+    border-bottom: 2px solid #2a3352;
+    padding: 80px 40px;
+}

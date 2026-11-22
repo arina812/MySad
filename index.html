@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Космонавтик | Снаряжение для космоса</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем скрипт для 3D-моделей -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">🚀 Космонавтик</div>
+        <nav>
+            <a href="#">Каталог</a>
+            <a href="#">Доставка на орбиту</a>
+            <a href="#">Корзина (0)</a>
+        </nav>
+    </header>
+
+
+    
+    <!-- Рекламный баннер -->
+    <section class="hero banner">
+        <div class="hero-text">
+            <span class="badge">🔥 Скидка 20% на первый заказ</span>
+            <h1>Снаряжение для других планет</h1>
+            <p>Покрутите нашего тестового астронавта, чтобы рассмотреть детали скафандра. Всё, что нужно для выживания в открытом космосе.</p>
+            <a href="#catalog" class="btn">Купить со скидкой</a>
+        </div>
+        
+        <div class="model-box">
+            <model-viewer 
+                src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+                alt="3D модель Астронавта"
+                auto-rotate
+                camera-controls
+                style="width: 300px; height: 300px;">
+            </model-viewer>
+            <p>← Покрутите меня мышкой →</p>
+        </div>
+    </section>
+        <h2>Хиты продаж</h2>
+        <div class="grid">
+            <div class="card">
+                <!-- Картинка скафандра -->
+                <img src="https://avatars.mds.yandex.net/i?id=db2541f6fb094b4d0b34b70b3467c37f_l-4449215-images-thumbs&n=13" alt="Скафандр">
+                <h3>Скафандр Orion</h3>
+                <div class="price">150 000 ₽</div>
+                <a href="#" class="btn">В корзину</a>
+            </div>
+            <div class="card">
+                <!-- Картинка шлема -->
+                <img src="https://i.pinimg.com/originals/24/27/d2/2427d272af88576d2abad33a7034cc2d.png" alt="Шлем">
+                <h3>Шлем с HUD</h3>
+                <div class="price">45 000 ₽</div>
+                <a href="#" class="btn">В корзину</a>
+            </div>
+            <div class="card">
+                <!-- Картинка еды -->
+                <img src="https://avatars.mds.yandex.net/get-znatoki/880589/2a0000017cbd9a509e2a0be816f9db2ca04e/orig" alt="Космическая еда">
+                <h3>Рацион астронавта</h3>
+                <div class="price">12 000 ₽</div>
+                <a href="#" class="btn">В корзину</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
